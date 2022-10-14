@@ -28,6 +28,20 @@ body {
 
 .poster img {
   width: 100%;
+  animation: kedip 1s linear infinite;
+}
+
+.poster .box {
+  position: relative;
+}
+
+.poster .box .info {
+  position: absolute;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  bottom: 4px;
+  background: #878787A3;
 }
 
 .poster audio {
@@ -48,6 +62,19 @@ body {
 
 }
 
+@keyframes kedip {
+
+  0%,
+  100% {
+    filter: saturate(.5);
+  }
+
+  50% {
+    filter: saturate(1.2);
+
+  }
+}
+
 
 .popup {
   position: absolute;
@@ -61,6 +88,6 @@ body {
   box-shadow: 0 6px 15px #00000087;
 }
 
-.showPopUp{
+.showPopUp {
   transform: translateY(0);
 }
